@@ -1,0 +1,50 @@
+.photos{
+    overflow: hidden;
+    height: 600px;
+    .first{
+        display: grid;
+        grid-column: 1fr 1fr;
+        .f-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g6.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .s-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g22.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .t-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g77.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .fi-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g5.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .se-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g3.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .th-image{
+            width:500px;
+            height: 300px;
+            background-image: url('/stage/images/g77.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

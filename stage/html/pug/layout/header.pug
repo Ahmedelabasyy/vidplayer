@@ -1,0 +1,74 @@
+// Start HEADER
+header
+    // Start Navbar
+    nav.navbar.navbar-expand-lg
+        .container
+            a.navbar-brand(href='#') 
+                i.music.fas.fa-play.rounded-circle
+                span Vidplayer
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mx-auto
+                    li.nav-item.active
+                        a.nav-link(href='#')
+                            | Home 
+                            span.sr-only (current)
+                    li.nav-item
+                        a.nav-link(href='#') About
+                    li.nav-item
+                        a.nav-link(href='#') Portfolio
+                    li.nav-item
+                        a.nav-link(href='#') Services
+                    li.nav-item
+                        a.nav-link(href='#') Pages
+                    li.nav-item
+                        a.nav-link(href='#') Contact
+            form.form-inline.my-2.my-lg-0
+                input.search-txt.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+                a(href="").search-icon.rounded-circle
+                    i.fas.fa-search.search
+
+    // Start Header Slider           
+    .container 
+        img(src="../stage/images/head.jpg")
+        ul.social.list-unstyled
+            li
+                i.fab.fa-facebook-f
+            li
+                i.fab.fa-twitter
+            li
+                i.fab.fa-dribbble
+            li
+                i.fab.fa-youtube
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                span.active(data-target='#carouselExampleIndicators' data-slide-to='0') 01
+                span(data-target='#carouselExampleIndicators' data-slide-to='1') 02
+                span(data-target='#carouselExampleIndicators' data-slide-to='2') 03
+            .carousel-inner
+                .carousel-item.active
+                    .row
+                        .col-md-6.info
+                            p.lead for website and video Editing
+                            h2 VIDEOGRAPHER’S
+                                br 
+                                | PORTFOLIO
+                            button.main-button See More About Us
+                .carousel-item
+                    .row
+                        .col-md-6.info
+                            p.lead for Showing  Online Vedios
+                            h2 VIDEOGRAPHER’S
+                                br 
+                                | PORTFOLIO
+                            button.main-button See More About Us
+                .carousel-item
+                        .row
+                            .col-md-6.info
+                                p.lead Videios With High Quality
+                                h2 VIDEOGRAPHER’S
+                                    br 
+                                    | PORTFOLIO
+                                button.main-button See More About Us
+    

@@ -1,0 +1,175 @@
+header{
+    min-height: 100vh;
+    background-image:url('/stage/images/main.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+    .navbar{
+        border-bottom: 1px solid rgba(248, 246, 246, 0.2);
+        padding: 25px;
+        .navbar-brand{
+            color:#FFF;
+            i.music{
+                margin-right: 10px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #FFF;
+                text-align: center;
+                color: #160B59;
+                padding-left: 4px;
+            }
+
+            span{
+                text-transform: uppercase;
+                font-size: 26px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+        }
+
+        .navbar-nav li{
+            padding-right: 25px;
+            text-transform: uppercase;
+            position: relative;
+            &.active{
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 35px;
+                    left: 8px;
+                    width: calc(100% - 40px);
+                    height: 1px;
+                    background-color: #00bfe7;
+                }
+            }
+        }
+
+        .navbar-nav li:last-child{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 13px;
+                background-color: rgba(248, 246, 246, 0.596);
+                margin-right: 5px;
+                right: 0;
+                top: 15px;
+            }
+        }
+
+        .navbar-nav li > a{
+            color:#FFF;
+        }
+
+        form{
+            border-radius: 40px;
+            background-color: #FFF;
+            padding: 0 10px;
+            position: relative;
+            .search-txt{
+                background: none;
+                outline: none;
+                border: none;
+                width: 170px;
+                transition: .4s;
+                line-height: 40px;
+                padding: 0;
+                float:left;
+            }
+            .search-icon{
+                width: 42px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #160B59;
+                position: absolute;
+                right: -1px;
+                outline: none;
+                i.search{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    img{
+        width: 780px;
+        height: 520px;
+        position:absolute;
+        top: 20%;
+        right: 12%;
+    }
+    ul.social{
+        position:absolute;
+        right: 20px;
+        top: 50%;
+        color: #FFF;
+        li{
+            margin-bottom: 12px;
+            cursor: pointer;
+            i{
+                font-size: 17px;
+            }
+        }
+    }
+    .carousel{
+        .carousel-indicators{
+            margin-left: 0;
+            right: 75%;
+            bottom: -125px;
+            span{
+                color: rgba(255, 255, 255, 0.596);
+                font-family: $play;
+                font-size: 19px;
+                display: inline-block;
+                margin-right: 9px;
+                background: none;
+                cursor: pointer;
+                position: relative;
+                padding: 3px;
+                font-weight: normal;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: 5px;
+                    bottom: 0;
+                    width: calc(100% - 9px);
+                    height: 0.3px;
+                    background-color:rgba(255, 255, 255, 0.596);
+                }
+                &.active{
+                    color:#FFF;
+                }
+                &.active:after{
+                    background-color:#FFF;
+                    color:#FFF;
+                }
+            }
+        }
+        .carousel-inner{
+            .info{
+                margin-top: 180px;
+                color:#FFF;
+                p{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: $raleway;
+                    letter-spacing: 2px;
+                    margin-bottom: 25px;
+                }
+                h2{
+                    font-family: $play;
+                    font-size: 58px;
+                    letter-spacing: 1px;
+                    margin-bottom: 34px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
