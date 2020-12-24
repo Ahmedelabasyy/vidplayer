@@ -1,3 +1,4 @@
+
 // Trigger nice Scroll
 $("body").niceScroll({
     cursorcolor: '#00bfe7',
@@ -17,3 +18,7 @@ myLis.forEach( li => {
         li.classList.add('hovering');
     }
 });
+
+// Trigger Wow Js
+
+new WOW().init();
