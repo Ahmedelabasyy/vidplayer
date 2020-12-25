@@ -93,3 +93,13 @@
     z-index: 9999;
     transition: .4s;
 }
+.read{
+    background: none;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    i{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+}
