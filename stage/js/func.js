@@ -1,4 +1,18 @@
 
+// Adding Classes To The Links
+var myLis = document.querySelectorAll('.navbar li');
+myLis.forEach( li => {
+    li.addEventListener('click', function () {
+        myLis.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+        
+    });
+    
+});
+
+// Trigger Wow Js
+
+new WOW().init();
 // Trigger nice Scroll
 $("body").niceScroll({
     cursorcolor: '#00bfe7',
@@ -6,19 +20,21 @@ $("body").niceScroll({
     cursorwidth:"6px"
 });
 
-// Adding Classes To The Links
-var myLis = document.querySelectorAll('.navbar li');
-myLis.forEach( li => {
-    li.onclick = function () {
-        if (!li.classList.contains('active')) {
-            li.classList.add('active');
-        }
+// Scroll to top button
+var scrollBtn = document.getElementById('scrolly')
+window.onscroll = function () {
+    'use strict';
+    if (window.pageYOffset > 800) {
+        scrollBtn.classList.add("showBtn");
+    } else {
+        scrollBtn.classList.remove("showBtn");
     }
-    if (!li.classList.contains('active')) {
-        li.classList.add('hovering');
-    }
-});
+};
 
-// Trigger Wow Js
+scrollBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+};
 
-new WOW().init();

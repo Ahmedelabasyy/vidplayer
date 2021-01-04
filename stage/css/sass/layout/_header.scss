@@ -8,6 +8,7 @@ header{
     .navbar{
         border-bottom: 1px solid rgba(248, 246, 246, 0.2);
         padding: 25px;
+        transition: .3s ease-in-out;
         .navbar-brand{
             color:#FFF;
             i.music{
@@ -19,6 +20,7 @@ header{
                 text-align: center;
                 color: #160B59;
                 padding-left: 4px;
+                color: rgba(0, 0, 0, 0.39);
             }
 
             span{
@@ -42,6 +44,7 @@ header{
                     width: calc(100% - 40px);
                     height: 1px;
                     background-color: #00bfe7;
+                    transform: scale(1,1);
                 }
             }
         }

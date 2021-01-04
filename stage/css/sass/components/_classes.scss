@@ -103,3 +103,37 @@
         font-size: 10px;
     }
 }
+.scroll-top{
+    position: fixed;
+    right: 25px;
+    bottom: 35px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    background-color: $mainColor;
+    cursor: pointer;
+    color: #FFF;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform .5s ease-in-out;
+    &.showBtn{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        width: 0%;
+        background-color: #05a9ca;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: .3s;
+    }
+    &:hover:after{
+        width: 100%;
+    }
+}
