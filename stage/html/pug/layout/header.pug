@@ -1,42 +1,18 @@
 // Start HEADER
 header
-    // Start Navbar
-    nav.navbar.navbar-expand-lg
-        .container
-            a.navbar-brand(href='#') 
-                i.music.fas.fa-play.rounded-circle
-                span Vidplayer
-            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.mx-auto
-                    li.nav-item.hovering.active
-                        a.nav-link(href='#')
-                            | Home 
-                            span.sr-only (current)
-                    li.nav-item.hovering
-                        a.nav-link(href='#') About
-                    li.nav-item.hovering
-                        a.nav-link(href='#') Portfolio
-                    li.nav-item.hovering
-                        a.nav-link(href='#') Services
-                    li.nav-item.hovering
-                        a.nav-link(href='#') Pages
-                    li.nav-item.hovering
-                        a.nav-link(href='#') Contact
-            form.form-inline.my-2.my-lg-0
-                input.search-txt.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
-                a(href="").search-icon.rounded-circle
-                    i.fas.fa-search.search
-
+    include navbar
     // Start Header Slider           
     .container 
         img(src="../stage/images/head.jpg")
         ul.social.list-unstyled
-            li: i.fab.fa-facebook-f
-            li: i.fab.fa-twitter
-            li: i.fab.fa-dribbble
-            li: i.fab.fa-youtube
+            li
+                a(href="https://www.facebook.com/mesho.elabasy" target="_blank"): i.fab.fa-facebook-f
+            li
+                a(href="https://twitter.com/AhmedElabasy_" target="_blank"): i.fab.fa-twitter
+            li
+                a(href="https://www.linkedin.com/in/ahmed-elabasy-6391111b2/" target="_blank"): i.fab.fa-linkedin-in
+            li
+                a(href="https://www.instagram.com/ahmedelabasy_/" target="_blank"): i.fab.fa-instagram
         #carouselExampleIndicators.carousel.slide(data-ride='carousel')
             ol.carousel-indicators
                 span.active(data-target='#carouselExampleIndicators' data-slide-to='0') 01

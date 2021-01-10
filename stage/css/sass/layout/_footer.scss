@@ -1,6 +1,6 @@
 footer{
     padding: 100px 0 10px;
-    background-color: #0e0322;
+    background-color: #0b021b;
     .about-us{
         padding-bottom: 70px;
         border-bottom: 1px solid #92929238;
@@ -69,17 +69,20 @@ footer{
                 li{
                     display: inline-block;
                     margin-left: 13px;
-                    i{
-                        width: 35px;
-                        height: 35px;
-                        line-height: 35px;
-                        text-align: center;
-                        color: #FFF;
-                        background-color: #231144;
-                        cursor: pointer;
-                        transition: .5s;
-                        &:hover{
-                            background-color: $mainColor;
+                    a{
+                        color:#FFF;
+                        i{
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            color: #FFF;
+                            background-color: #231144;
+                            cursor: pointer;
+                            transition: .5s;
+                            &:hover{
+                                background-color: $mainColor;
+                            }
                         }
                     }
                 }

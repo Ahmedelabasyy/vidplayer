@@ -5,7 +5,6 @@ myLis.forEach( li => {
     li.addEventListener('click', function () {
         myLis.forEach(item => item.classList.remove('active'));
         this.classList.add('active');
-        
     });
     
 });
@@ -38,3 +37,15 @@ scrollBtn.onclick = function () {
     })
 };
 
+// using jQuery
+$(function () {
+    "use strict";
+    $('.navbar li a').on('click', function (e) {
+        if(!$(this).hasClass('nonprevent')){
+            e.preventDefault();
+        }
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('scrolling')).offset().top
+        }, 1200);
+    });
+});

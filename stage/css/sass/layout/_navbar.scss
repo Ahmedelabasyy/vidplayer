@@ -1,0 +1,93 @@
+.navbar{
+    border-bottom: 1px solid rgba(248, 246, 246, 0.2);
+    padding: 25px;
+    transition: .3s ease-in-out;
+    .navbar-brand{
+        color:#FFF;
+        i.music{
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #FFF;
+            text-align: center;
+            color: #160B59 !important;
+            padding-left: 4px;
+            color: rgba(0, 0, 0, 0.39);
+        }
+
+        span{
+            text-transform: uppercase;
+            font-size: 26px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    .navbar-nav li{
+        padding-right: 25px;
+        text-transform: uppercase;
+        position: relative;
+        &.active{
+            &:after{
+                content: '';
+                position: absolute;
+                top: 35px;
+                left: 8px;
+                width: calc(100% - 40px);
+                height: 1px;
+                background-color: #00bfe7;
+                transform: scale(1,1);
+            }
+        }
+    }
+
+    .navbar-nav li:last-child{
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 13px;
+            background-color: rgba(248, 246, 246, 0.596);
+            margin-right: 5px;
+            right: 0;
+            top: 15px;
+        }
+    }
+
+    .navbar-nav li > a{
+        color:#FFF;
+    }
+
+    form{
+        border-radius: 40px;
+        background-color: #FFF;
+        padding: 0 10px;
+        position: relative;
+        .search-txt{
+            background: none;
+            outline: none;
+            border: none;
+            width: 170px;
+            transition: .4s;
+            line-height: 40px;
+            padding: 0;
+            float:left;
+        }
+        .search-icon{
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #160B59;
+            position: absolute;
+            right: -1px;
+            outline: none;
+            i.search{
+                color: #FFF;
+            }
+        }
+    }
+}
