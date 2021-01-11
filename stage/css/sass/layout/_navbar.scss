@@ -2,6 +2,8 @@
     border-bottom: 1px solid rgba(248, 246, 246, 0.2);
     padding: 25px;
     transition: .3s ease-in-out;
+    position: relative;
+    z-index: 9999;
     .navbar-brand{
         color:#FFF;
         i.music{
@@ -23,41 +25,58 @@
             font-weight: bold;
         }
     }
-
-    .navbar-nav li{
-        padding-right: 25px;
-        text-transform: uppercase;
-        position: relative;
-        &.active{
-            &:after{
-                content: '';
-                position: absolute;
-                top: 35px;
-                left: 8px;
-                width: calc(100% - 40px);
-                height: 1px;
-                background-color: #00bfe7;
-                transform: scale(1,1);
+    .navbar-nav{
+        li{
+            padding-right: 25px;
+            text-transform: uppercase;
+            position: relative;
+            &.active{
+                &:after{
+                    @media (min-width: 991px){
+                        content: '';
+                        position: absolute;
+                        top: 35px;
+                        left: 8px;
+                        width: calc(100% - 40px);
+                        height: 1px;
+                        background-color: #00bfe7;
+                        transform: scale(1,1);
+                    }
+                }
+            }
+            @media (max-width: 991px){
+                padding-right: 0;
             }
         }
-    }
-
-    .navbar-nav li:last-child{
-        position: relative;
-        &:before{
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 13px;
-            background-color: rgba(248, 246, 246, 0.596);
-            margin-right: 5px;
-            right: 0;
-            top: 15px;
+    
+        li:last-child{
+            position: relative;
+            &:before{
+                @media (min-width: 1200px){
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 13px;
+                    background-color: rgba(248, 246, 246, 0.596);
+                    margin-right: 5px;
+                    right: 0;
+                    top: 15px;
+                }
+            }
         }
-    }
-
-    .navbar-nav li > a{
-        color:#FFF;
+    
+        li > a{
+            color:#FFF;
+            transition: .3s;
+            &:hover{
+                @media (max-width: 991px){
+                    color:rgba(30, 1, 83, 0.856);
+                }
+            }
+        }
+        @media (max-width: 991px){
+            text-align: center;
+        }
     }
 
     form{
@@ -87,6 +106,36 @@
             outline: none;
             i.search{
                 color: #FFF;
+            }
+        }
+        @media (max-width: 1200px){
+            display: none;
+        }
+    }
+    .navbar-toggler{
+        background-color: $mainColor;
+        width: 80px;
+        padding: 5px;
+        position: relative;
+        h6{
+            font-weight: bold;
+            font-size: 13px;
+            color: #FFF;
+            margin-right: 25px;
+            margin-bottom: 0px;
+        }
+        .span-container{
+            display: inline-block;
+            top:6px;
+            right: 4px;
+            position: absolute;
+            .navbar-toggler-icon{
+                background: none;
+                width: 16px;
+                height: 2px;
+                background-color: #FFF;
+                display: block;
+                margin-bottom: 2px;
             }
         }
     }

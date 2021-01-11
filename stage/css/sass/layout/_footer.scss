@@ -61,11 +61,18 @@ footer{
                 font-weight: normal;
                 letter-spacing: 1px;
                 font-family: $raleway;
+                @media (max-width: 719px){
+                    font-size: 11px;
+                    margin-bottom: 16px;
+                }
             }
         }
         .footer-links{
             ul{
                 text-align: end;
+                @media (max-width: 719px){
+                    text-align: center;
+                }
                 li{
                     display: inline-block;
                     margin-left: 13px;

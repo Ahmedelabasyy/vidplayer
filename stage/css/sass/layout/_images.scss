@@ -15,7 +15,7 @@
     .box{
         display: grid;
         position: relative;
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
             grid-column: span 2 !important;
             grid-row: span 2 !important;
             height: 300px;
@@ -28,7 +28,7 @@
         &:nth-child(1){
             grid-column: span 2;
             grid-row: span 1;
-            background-image: url("/stage/images/g99.jpg");
+            background-image: url("../images/g99.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -36,7 +36,7 @@
         &:nth-child(2){
             grid-column: span 1;
             grid-row: span 1;
-            background-image: url("/stage/images/g2.jpg");
+            background-image: url("../images/g2.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -44,7 +44,7 @@
         &:nth-child(3){
             grid-column: span 1;
             grid-row: span 1;
-            background-image: url("/stage/images/g1.jpg");
+            background-image: url("../images/g1.jpg");
             background-repeat: no-repeat;
             background-position: 35%;
             background-size: cover;
@@ -52,7 +52,7 @@
         &:nth-child(4){
             grid-column: span 2;
             grid-row: span 2;
-            background-image: url("/stage/images/g5.jpg");
+            background-image: url("../images/g5.jpg");
             background-repeat: no-repeat;
             background-position: 55% 67%;
             background-size: inherit;
@@ -60,7 +60,7 @@
         &:nth-child(5){
             grid-column: span 1;
             grid-row: span 1;
-            background-image: url("/stage/images/g8.jpg");
+            background-image: url("../images/g8.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -68,18 +68,24 @@
         &:nth-child(6){
             grid-column: span 1;
             grid-row: span 1;
-            background-image: url("/stage/images/g4.jpg");
+            background-image: url("../images/g4.jpg");
             background-repeat: no-repeat;
             background-position: 15%;
             background-size: cover;
+            @media (min-width: 1164px) and (max-width:1399px) {
+                grid-row: span 2;
+            }
         }
         &:nth-child(7){
             grid-column: span 2;
             grid-row: span 1;
-            background-image: url("/stage/images/g3.jpg");
+            background-image: url("../images/g3.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            @media (min-width: 1164px) and (max-width:1399px) {
+                grid-row: span 2;
+            }
         }
         &:before{
             content: "";
@@ -96,6 +102,25 @@
         }
         &:hover:before{
             opacity: 1;
+        }
+        &:after{
+            content: '\f04b';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #FFF;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.514);
+            cursor: pointer;
+            z-index: 9999;
         }
     }
 }

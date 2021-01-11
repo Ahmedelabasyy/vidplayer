@@ -48,4 +48,7 @@ $(function () {
             scrollTop: $('#' + $(this).data('scrolling')).offset().top
         }, 1200);
     });
+    $('nav .navbar-toggler').on('click', function () {
+        $('#chcolor').toggleClass('chcolor');
+    });
 });

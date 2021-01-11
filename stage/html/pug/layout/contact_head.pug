@@ -1,17 +1,22 @@
+include ../components/scrollbtn
 .contact-head.text-center
     // Start Navbar
-    nav.navbar.navbar-expand-lg
+    nav.navbar.navbar-expand-lg#chcolor
         .container
-            a.navbar-brand(href='#') 
+            a.navbar-brand(href='vidplayer.html') 
                 i.music.fas.fa-play.rounded-circle
                 span Vidplayer
             button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-                span.navbar-toggler-icon
+                h6 MENU
+                .span-container
+                    span.navbar-toggler-icon 
+                    span.navbar-toggler-icon
+                    span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav.mx-auto
                     block activity
                         li.nav-item.hovering
-                            a.nav-link(href='vidplayer.html')
+                            a.nav-link.nonprevent(href='vidplayer.html')
                                 | Home 
                                 span.sr-only (current)
                     li.nav-item.hovering
@@ -39,21 +44,21 @@ section.connection
     .container
         .content-holder
             .row
-                .col-md-4.col-sm-12
+                .col-sm-12.col-md-6.col-xl-4
                     .contact-info
-                        i.fas.fa-map-marker-alt.fa-lg.rounded-circle
+                        i.fas.fa-map-marker-alt.fa-xl.rounded-circle
                         .info-box
                             h3 Adress
                             p Egypt/ Daqahlia, Mansoura
-                .col-md-4.col-sm-12
+                .col-sm-12.col-md-6.col-xl-4
                     .contact-info
-                        i.fas.fa-envelope.fa-lg.rounded-circle
+                        i.fas.fa-envelope.fa-xl.rounded-circle
                         .info-box
                             h3 Email
                             p ahmedelabasy662@gmail.com
-                .col-md-4.col-sm-12
+                .col-sm-12.col-md-12.col-xl-4
                     .contact-info
-                        i.fas.fa-phone-alt.fa-lg.rounded-circle
+                        i.fas.fa-phone-alt.fa-xl.rounded-circle
                         .info-box
                             h3 Hotline
                             p Mobile: +20 1013810452

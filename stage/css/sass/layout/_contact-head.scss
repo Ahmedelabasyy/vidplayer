@@ -1,14 +1,14 @@
 .contact-head{
     max-width: 100%;
-    height: 450px;
-    background-image: url('/stage/images/team2.jpg');
+    height: 430px;
+    background-image: url('../images/team2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     .contact-content{
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
         color: #FFF;
@@ -18,6 +18,9 @@
             font-family: $play;
             font-weight: bold;
             margin: 50px 0 10px;
+            @media (max-width: 550px){
+                font-size:36px;
+            }
         }
         p{
             color: rgba(158, 150, 150, 0.932);
@@ -33,7 +36,7 @@
     .content-holder{
         margin-bottom: 60px;
         .contact-info{
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             i{
                 float:left;
                 width: 70px;
@@ -58,6 +61,11 @@
         }
     }
     .form-holder{
+        iframe{
+            @media (max-width: 767px){
+                margin-bottom: 40px;
+            }
+        }
         h3{
             font-family: $play;
             font-weight: bold;

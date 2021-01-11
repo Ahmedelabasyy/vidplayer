@@ -1,11 +1,15 @@
 .our-team{
     min-height: 740px;
-    padding: 120px 0 10px;
-    background-image: url("/stage/images/team1.jpg");
+    padding: 120px 0 20px;
+    background-image: url("../images/team1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 9%;
     position: relative;
+    @media (max-width: 990px){
+        min-height: 940px;
+        padding: 110px 0 120px;
+    }
     .head{
         margin-bottom: 70px;
         h6 ,h2{
@@ -28,36 +32,61 @@
     }
     .team-faces{
         .members{
-            margin-bottom: 30px;
+            margin-bottom: 0px;
+            @media (max-width: 767px){
+                margin-bottom: 10px;
+            }
             .mem{
                 position: relative;
                 overflow: hidden;
+                @media (max-width: 991px) {
+                    text-align: center;
+                }
                 &.first-mem{
                     height: 390px;
-                    background-image: url("/stage/images/m1.jpeg");
+                    background-image: url("../images/m1.jpeg");
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-position: inherit;
+                    @media (max-width: 991px){
+                        height: 430px;
+                    }
                 }
                 &.sec-mem{
                     height: 390px;
-                    background-image: url("/stage/images/m3.jpg");
+                    background-image: url("../images/m3.jpg");
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-position: inherit;
                     margin-top: -60px;
+                    @media (max-width: 991px){
+                        margin-top:0;
+                        height: 430px;
+                    }
                 }
                 &.third-mem{
                     height: 390px;
-                    background-image: url("/stage/images/m2.jpg");
+                    background-image: url("../images/m2.jpg");
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-position: inherit;
                     margin-top: -120px;
+                    @media (max-width: 991px){
+                        margin-top:0;
+                        height: 430px;
+                    }
                 }
                 &.fourth-mem{
                     height: 390px;
-                    background-image: url("/stage/images/m5.jpg");
+                    background-image: url("../images/m5.jpg");
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-position: inherit;
                     margin-top: -180px;
+                    @media (max-width: 991px){
+                        margin-top:0;
+                        height: 430px;
+                    }
                 }
                 .text{
                     h4{
@@ -88,5 +117,13 @@
         position: absolute;
         right: 200px;
         bottom: 70px;
+        @media (max-width: 500px){
+            right: 25%;
+            bottom: 2%;
+        }
+        @media (min-width: 501px) and (max-width:990px){
+            bottom: 2%;
+            right: 35%;
+        }
     }
 }

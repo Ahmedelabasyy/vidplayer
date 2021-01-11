@@ -40,20 +40,22 @@
     }
 }
 .navbar li.hovering{
-    &:after{
-        content: '';
-        position: absolute;
-        top: 35px;
-        left: 8px;
-        width: 0px;
-        height: 1px;
-        background-color: #00bfe7;
-        transition: transform .3s;
-        transform:scale(0,1);
-    }
-    &:hover:after{
-        width: calc(100% - 40px);
-        transform: scale(1,1);
+    @media (min-width: 991px){
+        &:after{
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 8px;
+            width: 0px;
+            height: 1px;
+            background-color: #00bfe7;
+            transition: transform .3s;
+            transform:scale(0,1);
+        }
+        &:hover:after{
+            width: calc(100% - 40px);
+            transform: scale(1,1);
+        }
     }
 }
 .after{
@@ -92,6 +94,9 @@
     color: #FFF;
     z-index: 9999;
     transition: .4s;
+    @media (max-width: 991px) {
+        left:28%;
+    }
 }
 .read{
     background: none;
@@ -136,4 +141,7 @@
     &:hover:after{
         width: 100%;
     }
+}
+.chcolor{
+    background-color: $mainColor;
 }
