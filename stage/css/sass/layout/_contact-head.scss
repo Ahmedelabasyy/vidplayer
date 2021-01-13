@@ -71,23 +71,75 @@
             font-weight: bold;
             text-transform: uppercase;
             color: #FFF;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         form{
-            input, textarea{
-                width: 100%;
-                display: block;
-                margin-bottom: 10px;
+            .form-control{
+                position: relative;
                 border: none;
                 background: none;
-                padding: 10px;
-                border-radius: 5px;
-                border-bottom: 1px solid #00bfe79c;
-                margin-bottom: 34px;
-                color: #FFF;
+                margin-bottom: 10px;
+                padding-bottom: 33px;
+                &.success{
+                    input{
+                        border-bottom: 1px solid #2ecc71;
+                    }
+                    i.fas.fa-check-circle{
+                        visibility: visible;
+                        color: #2ecc71;
+                    }
+                }
+                &.error{
+                    input{
+                        border-bottom: 1px solid #e74c3c;
+                    }
+                    i.fas.fa-exclamation-circle{
+                        visibility: visible;
+                        color: #e74c3c;
+                    }
+                    span{
+                        visibility: visible;
+                        color:#e74c3c;
+                    }
+                }
+                input{
+                    width: 100%;
+                    display: block;
+                    border: none;
+                    border-bottom: 1px solid #00bfe79c;
+                    background: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: #FFF;
+                }
+                i{
+                    position: absolute;
+                    top: 20px;
+                    right: 18px;
+                    visibility: hidden;
+                }
+                span{
+                    position: absolute;
+                    left: 13px;
+                    bottom: 0;
+                    visibility: hidden;
+                    font-weight: normal;
+                    font-size: 15px;
+                }
             }
-            textarea{
-                height: 155px;
+            button{
+                width: 100%;
+                background: none;
+                border: none;
+                background-color: $mainColor;
+                padding: 10px;
+                border-radius: 4px;
+                color: #FFF;
+                text-transform: uppercase;
+                font-family: $play;
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 2px;
             }
         }
     }

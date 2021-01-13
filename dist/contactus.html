@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-cmopatible" content="ie=edge"/>
-    <title>Vidplayer</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&amp;display=swap"/>
@@ -87,11 +87,20 @@
             </div>
             <div class="col-md-6 col-sm-12">
               <h3>Get In Touch</h3>
-              <form>
-                <input type="text" name="name" placeholder="Full Name"/>
-                <input type="email" name="name" placeholder="Email"/>
-                <input type="password" name="name" placeholder="Password"/>
-                <textarea placeholder="Leave a message"></textarea>
+              <form id="form">
+                <div class="form-control">
+                  <input type="text" name="name" placeholder="Full Name"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+                </div>
+                <div class="form-control">
+                  <input type="email" name="name" placeholder="Email"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+                </div>
+                <div class="form-control">
+                  <input type="password" id="pass" name="name" placeholder="Password"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+                </div>
+                <div class="form-control">
+                  <input type="password" id="checkpass" name="name" placeholder="Confirm Password"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+                </div>
+                <button>Submit info</button>
               </form>
             </div>
           </div>
@@ -165,7 +174,7 @@
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -10,3 +10,6 @@ body{
 input:focus, select:focus, textarea:focus, button:focus{
     outline: 0;
 }
+.sortable-handler {
+    touch-action: none;
+}

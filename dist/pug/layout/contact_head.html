@@ -68,11 +68,20 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <h3>Get In Touch</h3>
-          <form>
-            <input type="text" name="name" placeholder="Full Name"/>
-            <input type="email" name="name" placeholder="Email"/>
-            <input type="password" name="name" placeholder="Password"/>
-            <textarea placeholder="Leave a message"></textarea>
+          <form id="form">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Full Name"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+            </div>
+            <div class="form-control">
+              <input type="email" name="name" placeholder="Email"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+            </div>
+            <div class="form-control">
+              <input type="password" id="pass" name="name" placeholder="Password"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+            </div>
+            <div class="form-control">
+              <input type="password" id="checkpass" name="name" placeholder="Confirm Password"/><i class="fas fa-exclamation-circle"></i><i class="fas fa-check-circle"></i><span>This Field can't be Empty</span>
+            </div>
+            <button>Submit info</button>
           </form>
         </div>
       </div>
