@@ -1,10 +1,13 @@
 header{
-    min-height: 100vh;
+    max-height: 100vh;
     background-image:url('../images/main.jpg');
     background-size: cover;
     overflow: hidden;
     background-position: center;
     position: relative;
+    @media (min-width: 1200px){
+        min-height: 100vh !important;
+    }
     img{
         width: 780px;
         height: 520px;
@@ -76,7 +79,7 @@ header{
             }
             @media (max-width: 991px){
                 bottom: 15%;
-                right: 61%;
+                right: 50%;
             }
         }
         .carousel-inner{
@@ -90,6 +93,12 @@ header{
                     font-family: $raleway;
                     letter-spacing: 2px;
                     margin-bottom: 25px;
+                    @media (max-width: 520px){
+                        font-size:14px;
+                    }
+                    @media (max-width: 320px){
+                        font-size:13px;
+                    }
                 }
                 h2{
                     font-family: $play;
@@ -98,6 +107,12 @@ header{
                     margin-bottom: 34px;
                     font-weight: bold;
                     text-transform: uppercase;
+                    @media (max-width: 520px){
+                        font-size:37px;
+                    }
+                    @media (max-width: 320px){
+                        font-size:28px;
+                    }
                 }
                 @media (max-width: 991px){
                     margin-top: 120px;

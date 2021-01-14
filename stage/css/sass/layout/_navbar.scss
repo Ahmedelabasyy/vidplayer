@@ -16,6 +16,12 @@
             color: #160B59 !important;
             padding-left: 4px;
             color: rgba(0, 0, 0, 0.39);
+            @media (max-width: 280px){
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 17px;
+            }
         }
 
         span{
@@ -23,6 +29,12 @@
             font-size: 26px;
             font-family: sans-serif;
             font-weight: bold;
+            @media (max-width: 320px){
+                font-size: 21px;
+            }
+            @media (max-width: 280px){
+                font-size: 16px;
+            }
         }
     }
     .navbar-nav{
