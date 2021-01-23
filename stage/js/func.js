@@ -8,15 +8,8 @@ myLis.forEach( li => {
     
 });
 
-// Trigger Wow Js
-new WOW().init();
-// Trigger nice Scroll
 
-$("body").niceScroll({
-    cursorcolor: '#00bfe7',
-    cursorborder: 'none',
-    cursorwidth:"6px"
-});
+// Trigger nice Scroll
 
 // Scroll to top button
 let scrollBtn = document.getElementById('scrolly')
@@ -50,26 +43,24 @@ $(function () {
     $('nav .navbar-toggler').on('click', function () {
         $('#chcolor').toggleClass('chcolor');
         $('header .carousel-inner').toggleClass('mr');
-        mediaFunction(x);
-        x.addListener(mediaFunction);
+        $('.carousel .carousel-indicators').toggleClass('view');
     });
 });
 
 // Using Media Query
 
-function mediaFunction(x){
-    if (x.matches){
-        $('.carousel .carousel-indicators').toggleClass('view');
-    }
-}
-let x = window.matchMedia("(max-width:360px)");
-
 function mediaFunction(z){
     if (z.matches){
-        $('.nicescroll-rails.nicescroll-rails-vr').remove();
+        $("body").niceScroll({
+            cursorcolor: '#00bfe7',
+            cursorborder: 'none',
+            cursorwidth:"6px"
+        });
+        // Trigger Wow Js
+        new WOW().init();
     }
 }
-let z = window.matchMedia("(max-width:1200px)");
+let z = window.matchMedia("(min-width:1200px)");
 mediaFunction(z);
 z.addListener(mediaFunction);
 

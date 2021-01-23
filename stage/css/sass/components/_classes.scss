@@ -115,9 +115,11 @@
     z-index: 9999;
     width: 40px;
     height: 40px;
+    line-height: 40px;
     border: none;
     background: none;
     background-color: $mainColor;
+    text-align: center;
     cursor: pointer;
     color: #FFF;
     opacity: 0;
