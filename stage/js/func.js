@@ -1,5 +1,5 @@
 // Adding Classes To The Links
-let myLis = document.querySelectorAll('.navbar li');
+let myLis = document.querySelectorAll('#navbar li');
 myLis.forEach( li => {
     li.addEventListener('click', function () {
         myLis.forEach(item => item.classList.remove('active'));
@@ -49,30 +49,27 @@ $(function () {
     });
     $('nav .navbar-toggler').on('click', function () {
         $('#chcolor').toggleClass('chcolor');
+        $('header .carousel-inner').toggleClass('mr');
+        mediaFunction(x);
+        x.addListener(mediaFunction);
     });
 });
 
-// Handeling the Form
-let myForm = document.getElementById('form'),
-    myFormItems = document.querySelectorAll('form input'),
-    myPass = document.querySelector('.form-control #pass');
-    CheckedPass = document.querySelector('.form-control #checkpass');
+// Using Media Query
 
+function mediaFunction(x){
+    if (x.matches){
+        $('.carousel .carousel-indicators').toggleClass('view');
+    }
+}
+let x = window.matchMedia("(max-width:360px)");
 
-myForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    myFormItems.forEach(ele => {
-        if (ele.value === "") {
-            ele.parentElement.classList.remove('success');
-            ele.parentElement.classList.add('error');
-        } else{
-            ele.parentElement.classList.remove('error');
-            ele.parentElement.classList.add('success');
-        }
-        if (myPass.value !== CheckedPass.value){
-            CheckedPass.parentElement.classList.remove('success');
-            CheckedPass.parentElement.classList.add('error');
-            CheckedPass.parentElement.children[3].textContent = "Password Doesn't Match";
-        }
-    });
-});
+function mediaFunction(z){
+    if (z.matches){
+        $('.nicescroll-rails.nicescroll-rails-vr').remove();
+    }
+}
+let z = window.matchMedia("(max-width:1200px)");
+mediaFunction(z);
+z.addListener(mediaFunction);
+

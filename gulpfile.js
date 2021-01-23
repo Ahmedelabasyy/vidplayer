@@ -27,7 +27,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('stage/js/*.js')
+    return gulp.src('stage/js/func.js')
         .pipe(concat('main.js'))
         .pipe(minify())
         .pipe(gulp.dest('dist/js'))
@@ -39,5 +39,5 @@ gulp.task('watch', function () {
     livereload.listen();
     gulp.watch(['stage/css/**/*.css', 'stage/css/**/*.scss'], ['css']);
     gulp.watch('stage/html/**/*.pug', ['html']);
-    gulp.watch('stage/js/*.js', ['js']);
+    gulp.watch('stage/js/func.js', ['js']);
 });

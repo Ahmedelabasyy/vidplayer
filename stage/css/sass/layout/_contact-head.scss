@@ -21,6 +21,9 @@
             @media (max-width: 550px){
                 font-size:36px;
             }
+            @media (max-width: 360px){
+                font-size:26px;
+            }
         }
         p{
             color: rgba(158, 150, 150, 0.932);
@@ -140,6 +143,7 @@
                 font-size: 18px;
                 font-weight: bold;
                 letter-spacing: 2px;
+                cursor:pointer;
             }
         }
     }
